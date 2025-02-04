@@ -1,0 +1,288 @@
+<html>
+ <head>
+  <title>
+   ASOIAF Noble House Creator
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&amp;display=swap" rel="stylesheet"/>
+  <style>
+   body {
+            font-family: 'MedievalSharp', cursive;
+        }
+  </style>
+ </head>
+ <body class="bg-gray-900 text-white">
+  <header class="bg-gray-800 p-4 flex justify-between items-center">
+   <h1 class="text-3xl">
+    ASOIAF Noble House Creator
+   </h1>
+   <nav>
+    <ul class="flex space-x-4">
+     <li>
+      <a class="hover:text-gray-400" href="#">
+       Home
+      </a>
+     </li>
+     <li>
+      <a class="hover:text-gray-400" href="#">
+       Create House
+      </a>
+     </li>
+     <li>
+      <a class="hover:text-gray-400" href="#">
+       Create Character
+      </a>
+     </li>
+     <li>
+      <a class="hover:text-gray-400" href="#">
+       Gallery
+      </a>
+     </li>
+     <li>
+      <a class="hover:text-gray-400" href="#">
+       Profile
+      </a>
+     </li>
+     <li>
+      <a class="hover:text-gray-400" href="#">
+       Login
+      </a>
+     </li>
+    </ul>
+   </nav>
+  </header>
+  <main class="container mx-auto p-4">
+   <section class="mb-8" id="house-creation">
+    <h2 class="text-2xl mb-4">
+     Create Your Noble House
+    </h2>
+    <form class="space-y-4">
+     <div>
+      <label class="block" for="house-name">
+       House Name
+      </label>
+      <input class="w-full p-2 bg-gray-800 border border-gray-700 rounded" id="house-name" type="text"/>
+     </div>
+     <div>
+      <label class="block" for="house-motto">
+       House Motto
+      </label>
+      <input class="w-full p-2 bg-gray-800 border border-gray-700 rounded" id="house-motto" type="text"/>
+     </div>
+     <div>
+      <label class="block" for="sigil">
+       Sigil
+      </label>
+      <div class="flex space-x-4">
+       <input class="w-full p-2 bg-gray-800 border border-gray-700 rounded" id="sigil" type="file"/>
+       <button class="bg-blue-600 p-2 rounded" type="button">
+        Use Sigil Designer
+       </button>
+      </div>
+     </div>
+     <div>
+      <label class="block" for="seat-of-power">
+       Seat of Power
+      </label>
+      <input class="w-full p-2 bg-gray-800 border border-gray-700 rounded" id="seat-of-power" type="text"/>
+     </div>
+     <div>
+      <label class="block" for="house-words">
+       House Words
+      </label>
+      <input class="w-full p-2 bg-gray-800 border border-gray-700 rounded" id="house-words" type="text"/>
+     </div>
+     <div>
+      <label class="block" for="house-history">
+       House History
+      </label>
+      <textarea class="w-full p-2 bg-gray-800 border border-gray-700 rounded" id="house-history"></textarea>
+     </div>
+     <div>
+      <label class="block" for="alliances">
+       Alliances
+      </label>
+      <input class="w-full p-2 bg-gray-800 border border-gray-700 rounded" id="alliances" type="text"/>
+     </div>
+     <div>
+      <label class="block" for="rivalries">
+       Rivalries
+      </label>
+      <input class="w-full p-2 bg-gray-800 border border-gray-700 rounded" id="rivalries" type="text"/>
+     </div>
+     <div>
+      <label class="block" for="wars">
+       Wars
+      </label>
+      <input class="w-full p-2 bg-gray-800 border border-gray-700 rounded" id="wars" type="text"/>
+     </div>
+     <div>
+      <label class="block" for="members">
+       Members
+      </label>
+      <textarea class="w-full p-2 bg-gray-800 border border-gray-700 rounded" id="members"></textarea>
+     </div>
+     <button class="bg-blue-600 p-2 rounded" type="submit">
+      Save House
+     </button>
+    </form>
+   </section>
+   <section class="mb-8" id="character-creation">
+    <h2 class="text-2xl mb-4">
+     Create a Character
+    </h2>
+    <form class="space-y-4">
+     <div>
+      <label class="block" for="character-name">
+       Name
+      </label>
+      <input class="w-full p-2 bg-gray-800 border border-gray-700 rounded" id="character-name" type="text"/>
+     </div>
+     <div>
+      <label class="block" for="character-age">
+       Age
+      </label>
+      <input class="w-full p-2 bg-gray-800 border border-gray-700 rounded" id="character-age" type="number"/>
+     </div>
+     <div>
+      <label class="block" for="character-appearance">
+       Appearance
+      </label>
+      <textarea class="w-full p-2 bg-gray-800 border border-gray-700 rounded" id="character-appearance"></textarea>
+     </div>
+     <div>
+      <label class="block" for="character-traits">
+       Personality Traits
+      </label>
+      <textarea class="w-full p-2 bg-gray-800 border border-gray-700 rounded" id="character-traits"></textarea>
+     </div>
+     <div>
+      <label class="block" for="character-role">
+       Role in House
+      </label>
+      <input class="w-full p-2 bg-gray-800 border border-gray-700 rounded" id="character-role" type="text"/>
+     </div>
+     <div>
+      <label class="block" for="character-relationships">
+       Relationships
+      </label>
+      <textarea class="w-full p-2 bg-gray-800 border border-gray-700 rounded" id="character-relationships"></textarea>
+     </div>
+     <div>
+      <label class="block" for="character-backstory">
+       Backstory
+      </label>
+      <textarea class="w-full p-2 bg-gray-800 border border-gray-700 rounded" id="character-backstory"></textarea>
+     </div>
+     <button class="bg-blue-600 p-2 rounded" type="submit">
+      Save Character
+     </button>
+    </form>
+   </section>
+   <section class="mb-8" id="gallery">
+    <h2 class="text-2xl mb-4">
+     Public Gallery
+    </h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+     <div class="bg-gray-800 p-4 rounded">
+      <h3 class="text-xl">
+       House Stark
+      </h3>
+      <img alt="Sigil of House Stark, featuring a grey direwolf on a white field" height="200" src="https://storage.googleapis.com/a1aa/image/b48RUI929YYpeks6GeSpslffGvZzzOsFwuMzITRzYyY.jpg" width="300"/>
+      <p class="mt-2">
+       Seat of Power: Winterfell
+      </p>
+      <p>
+       House Words: Winter is Coming
+      </p>
+      <button class="bg-blue-600 p-2 rounded mt-2">
+       View Details
+      </button>
+     </div>
+     <div class="bg-gray-800 p-4 rounded">
+      <h3 class="text-xl">
+       House Lannister
+      </h3>
+      <img alt="Sigil of House Lannister, featuring a golden lion on a crimson field" height="200" src="https://storage.googleapis.com/a1aa/image/u61bFIMIBcsN-tsn1zYD9tQSKxr_SuZou2AwUr_CNRY.jpg" width="300"/>
+      <p class="mt-2">
+       Seat of Power: Casterly Rock
+      </p>
+      <p>
+       House Words: Hear Me Roar!
+      </p>
+      <button class="bg-blue-600 p-2 rounded mt-2">
+       View Details
+      </button>
+     </div>
+     <div class="bg-gray-800 p-4 rounded">
+      <h3 class="text-xl">
+       House Targaryen
+      </h3>
+      <img alt="Sigil of House Targaryen, featuring a red three-headed dragon on a black field" height="200" src="https://storage.googleapis.com/a1aa/image/QmypEUHn6qnsvkLSc1M26kvJuER2H32DINMxy8B9qNk.jpg" width="300"/>
+      <p class="mt-2">
+       Seat of Power: Dragonstone
+      </p>
+      <p>
+       House Words: Fire and Blood
+      </p>
+      <button class="bg-blue-600 p-2 rounded mt-2">
+       View Details
+      </button>
+     </div>
+     <div class="bg-gray-800 p-4 rounded">
+      <h3 class="text-xl">
+       House Baratheon
+      </h3>
+      <img alt="Sigil of House Baratheon, featuring a black stag on a gold field" height="200" src="https://storage.googleapis.com/a1aa/image/n70Q5LxWQEiwiP5pszrpEQn2Jv03LwSioxpu1IFR35A.jpg" width="300"/>
+      <p class="mt-2">
+       Seat of Power: Storm's End
+      </p>
+      <p>
+       House Words: Ours is the Fury
+      </p>
+      <button class="bg-blue-600 p-2 rounded mt-2">
+       View Details
+      </button>
+     </div>
+     <div class="bg-gray-800 p-4 rounded">
+      <h3 class="text-xl">
+       House Greyjoy
+      </h3>
+      <img alt="Sigil of House Greyjoy, featuring a golden kraken on a black field" height="200" src="https://storage.googleapis.com/a1aa/image/vYFrf_JsVFO6iNmNVD27T7hvCeSSJiQZ1JkaR1uhr7A.jpg" width="300"/>
+      <p class="mt-2">
+       Seat of Power: Pyke
+      </p>
+      <p>
+       House Words: We Do Not Sow
+      </p>
+      <button class="bg-blue-600 p-2 rounded mt-2">
+       View Details
+      </button>
+     </div>
+     <div class="bg-gray-800 p-4 rounded">
+      <h3 class="text-xl">
+       House Martell
+      </h3>
+      <img alt="Sigil of House Martell, featuring a red sun pierced by a gold spear on an orange field" height="200" src="https://storage.googleapis.com/a1aa/image/f7fcYVo4gDXmB21WOTw-nOG3q0CM66YCSJSGveFGMa4.jpg" width="300"/>
+      <p class="mt-2">
+       Seat of Power: Sunspear
+      </p>
+      <p>
+       House Words: Unbowed, Unbent, Unbroken
+      </p>
+      <button class="bg-blue-600 p-2 rounded mt-2">
+       View Details
+      </button>
+     </div>
+    </div>
+   </section>
+  </main>
+  <footer class="bg-gray-800 p-4 text-center">
+   <p>
+    © 2023 ASOIAF Noble House Creator. All rights reserved.
+   </p>
+  </footer>
+ </body>
+</html>
